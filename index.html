@@ -16,20 +16,16 @@
             <h2>Featured Plugins</h2>
             <ul>
                 <li>
-                    <img src="" alt="Plugin 1 Icon" class="plugin-icon">
+                   ![Plugin 1 Icon](https://example.com/plugin1-icon.png)
                     <h3>Plugin 1</h3>
                     <p>Description of Plugin 1</p>
                     <a href="plugin1.jar" download>Download</a>
-                    <input type="text" id="plugin1-icon" placeholder="Paste image link here">
-                    <button onclick="updateImage('plugin1-icon')">Update Icon</button>
                 </li>
                 <li>
-                    <img src="" alt="Plugin 2 Icon" class="plugin-icon">
+                   ![Plugin 2 Icon](https://example.com/plugin2-icon.png)
                     <h3>Plugin 2</h3>
                     <p>Description of Plugin 2</p>
                     <a href="plugin2.jar" download>Download</a>
-                    <input type="text" id="plugin2-icon" placeholder="Paste image link here">
-                    <button onclick="updateImage('plugin2-icon')">Update Icon</button>
                 </li>
                 <!-- Add more plugins here -->
             </ul>
@@ -44,13 +40,5 @@
     <footer>
         <p>&copy; 2024 Minecraft Plugin Hub</p>
     </footer>
-
-    <script>
-        function updateImage(id) {
-            var img = document.querySelector(`#${id}-icon`);
-            var input = document.querySelector(`#${id}`);
-            img.src = input.value;
-        }
-    </script>
 </body>
 </html>
