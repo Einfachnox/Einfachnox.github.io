@@ -1,7 +1,68 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Add navigation links here -->
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="about">
+            <img src="assets/images/wfh_1.svg" alt="jane-doe" loading="lazy" class="hero-img">
+            <div class="bio animate__animated animate__shakeX">
+                <h2 class="bio-title">About Me</h2>
+                <p class="bio-text">
+                    I am a seasoned developer with extensive experience in Python and Java. With a strong background in software development, I have honed my skills in creating efficient, scalable, and reliable solutions.
+                </p>
+            </div>
+        </section>
+        <section class="projects">
+            <h2 class="project-title">My Projects</h2>
+            <div class="projects-container">
+                <div class="project-container">
+                    <h3 class="project-title">Project 1</h3>
+                    <p class="project-details">Description of Project 1</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project-container">
+                    <h3 class="project-title">Project 2</h3>
+                    <p class="project-details">Description of Project 2</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project-container">
+                    <h3 class="project-title">Project 3</h3>
+                    <p class="project-details">Description of Project 3</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h2 class="contact-title">Get in Touch</h2>
+            <div class="contact-form-container">
+                <form>
+                    <input type="text" placeholder="Name" class="input-field">
+                    <input type="email" placeholder="Email" class="input-field">
+                    <textarea placeholder="Message" class="input-field"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="socials">
+                <a href="#" target="_blank"><img src="assets/icons/icons8-twitter-circled.gif" alt="Twitter" loading="lazy" class="socicon"></a>
+                <a href="#" target="_blank"><img src="assets/icons/icons8-instagram.gif" alt="Instagram" loading="lazy" class="socicon"></a>
+                <a href="#" target="_blank"><img src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon"></a>
+                <a href="#" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Add footer content here -->
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
