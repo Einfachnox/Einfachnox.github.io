@@ -1,57 +1,76 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.hero {
-    background-color: #f0f0f0;
-    padding: 2rem;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
-.hero-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 1rem;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
-.bio {
-    margin-top: 2rem;
-}
-
-.bio-title {
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.bio-text {
-    font-size: 18px;
-    margin-bottom: 1rem;
-}
-
-.projects {
-    background-color: #fff;
-    padding: 2rem;
-}
-
-.project-container {
-    background-color: #fff;
-    border-radius: 11px;
+section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    margin: 1rem;
-    width: 20.875rem;
 }
 
-.project-title {
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 0.5rem;
+h2 {
+    margin-top: 0;
 }
 
-.project-details {
-    font-size: 16px;
-    margin-bottom: 1rem;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.plugin-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #23527c;
 }
