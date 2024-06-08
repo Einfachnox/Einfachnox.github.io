@@ -1,60 +1,56 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Minecraft Plugin Hub</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <!-- Add navigation links here -->
-        </nav>
+        <h1>Minecraft Plugin Hub</h1>
     </header>
     <main>
-        <section class="hero" id="about">
-            <img src="https://via.placeholder.com/150" alt="jane-doe" loading="lazy" class="hero-img">
-            <div class="bio animate__animated animate__shakeX">
-                <h2 class="bio-title">About Me</h2>
-                <p class="bio-text">
-                    I am a seasoned developer with extensive experience in Python and Java. With a strong background in software development, I have honed my skills in creating efficient, scalable, and reliable solutions.
-                </p>
-            </div>
+        <section>
+            <h2>Featured Plugins</h2>
+            <ul>
+                <li>
+                    <img src="" alt="Plugin 1 Icon" class="plugin-icon">
+                    <h3>Plugin 1</h3>
+                    <p>Description of Plugin 1</p>
+                    <a href="plugin1.jar" download>Download</a>
+                    <input type="text" id="plugin1-icon" placeholder="Paste image link here">
+                    <button onclick="updateImage('plugin1-icon')">Update Icon</button>
+                </li>
+                <li>
+                    <img src="" alt="Plugin 2 Icon" class="plugin-icon">
+                    <h3>Plugin 2</h3>
+                    <p>Description of Plugin 2</p>
+                    <a href="plugin2.jar" download>Download</a>
+                    <input type="text" id="plugin2-icon" placeholder="Paste image link here">
+                    <button onclick="updateImage('plugin2-icon')">Update Icon</button>
+                </li>
+                <!-- Add more plugins here -->
+            </ul>
         </section>
-        <section class="projects">
-            <h2 class="project-title">My Projects</h2>
-            <div class="projects-container">
-                <div class="project-container">
-                    <h3 class="project-title">Project 1</h3>
-                    <p class="project-details">Description of Project 1</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
-                <div class="project-container">
-                    <h3 class="project-title">Project 2</h3>
-                    <p class="project-details">Description of Project 2</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
-                <div class="project-container">
-                    <h3 class="project-title">Project 3</h3>
-                    <p class="project-details">Description of Project 3</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
-            </div>
-        </section>
-        <section class="socials">
-            <h2 class="socials-title">Follow Me</h2>
-            <div class="socials-container">
-                <a href="#" target="_blank"><img src="https://via.placeholder.com/50" alt="Twitter" loading="lazy" class="socicon"></a>
-                <a href="#" target="_blank"><img src="https://via.placeholder.com/50" alt="Instagram" loading="lazy" class="socicon"></a>
-                <a href="#" target="_blank"><img src="https://via.placeholder.com/50" alt="Linkedin" loading="lazy" class="socicon"></a>
-                <a href="#" target="_blank"><img src="https://via.placeholder.com/50" alt="Github" class="socicon"></a>
-            </div>
+        <section>
+            <h2>All Plugins</h2>
+            <ul>
+                <!-- List all plugins here -->
+            </ul>
         </section>
     </main>
     <footer>
-        <!-- Add footer content here -->
+        <p>&copy; 2024 Minecraft Plugin Hub</p>
     </footer>
-    <script src="script.js"></script>
+
+    <script>
+        function updateImage(id) {
+            var img = document.querySelector(`#${id}-icon`);
+            var input = document.querySelector(`#${id}`);
+            img.src = input.value;
+        }
+    </script>
 </body>
 </html>
